@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="402formulario.php" method="GET">
+        <p><label for="nombre">Nombre Completo:</label>
+            <input type="text" name="nombre" id="nombre" value="Aitor Tilla" />
+        </p>
+        
+        <p> <label for="email">Correo Electrónico:</label>
+            <input type="email" name="email" id="email" value="aitor@profephp.com" />
+        </p>
+        <p> <label for="URL">URL:</label>
+            <input type="url" name="URL" id="URL" value="https://www.youtube.com/" />
+        </p>
+        <p> <label for="sexo">Género:</label>
+            <input type="radio" name="sexo" id="sexo" value="Femenino" />F
+            <input type="radio" name="sexo" id="sexo" value="Masculino" />M
+        </p>
+        <p> <label for="familia">Número de convivientes en el domicilio:</label>
+            <input type="number" name="familia" id="familia" value="4" />
+        </p>
+        <p> <label for="aficiones[]">Aficiones:</label>
+            <input type="checkbox" name="aficiones[]" id="aficiones[]" value="Leer" checked="checked" />Leer
+            <input type="checkbox" name="aficiones[]" id="aficiones[]" value="Jugar" />Jugar
+            <input type="checkbox" name="aficiones[]" id="aficiones[]" value="Programar" />Programar
+            <input type="checkbox" name="aficiones[]" id="aficiones[]" value="Dormir" />Dormir
+        </p>
+
+        <p> <label for="comida[]">Menú favorito:</label>
+            <select multiple name="comida[]" id="comida[]">
+                <option value="Lasaña Boloñesa">Lasaña</option>
+                <option value="Pasta carbonara con parmesano">Pasta carbonara</option>
+                <option value="Hamburgesa del twins burguer">Hamburguesa</option>
+                <option value="Pizza Vikinga">Pizza</option>
+            </select>
+        </p>
+        <input type="submit" value="Enviar" name="enviar" />
+    </form>
+    </form>
+</body>
+
+</html>
